@@ -52,7 +52,7 @@
                     </a>
                 </div>
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="transdet.php">
+                    <a class="btn btn-xl btn-outline-light" href="custdet.php">
                         <i class="fas fa-download mr-2"></i>
                         Make another Transfer
                     </a>
