@@ -3,11 +3,11 @@
 <?php 
 
 // Username is root 
-$user = 'id16401102_webd'; 
-$password = '30I9ZvCm8TO_/~6I'; 
+$user = ''; 
+$password = ''; 
 
 // Database name is gfg 
-$database = 'id16401102_bank'; 
+$database = 'bank'; 
 
 // Server is localhost with 
 $servername='localhost'; 
