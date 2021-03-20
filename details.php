@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-$link = mysqli_connect("localhost", "", "", "bank");
+$link = mysqli_connect("localhost", "root", "", "bank");
 // Check connection
 if($link === false){
    die("ERROR: Could not connect. " . mysqli_connect_error());
