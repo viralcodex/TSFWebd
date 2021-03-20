@@ -3,7 +3,7 @@
 <?php 
 
 // Username is root 
-$user = ''; 
+$user = 'root'; 
 $password = ''; 
 
 // Database name is gfg 
