@@ -3,10 +3,9 @@
 <?php 
 
 // Username is root 
-$user = ''; 
+$user = 'root'; 
 $password = ''; 
 
-// Database name is gfg 
 $database = 'bank'; 
 
 // Server is localhost with 
