@@ -6,7 +6,7 @@
 $user = 'root'; 
 $password = ''; 
 
-// Database name is gfg 
+ 
 $database = 'bank'; 
 
 // Server is localhost
