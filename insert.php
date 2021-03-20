@@ -2,7 +2,7 @@
 <?php
     /* Attempt MySQL server connection. Assuming you are running MySQL
     server with default setting (user 'root' with no password) */
-     $link = mysqli_connect("localhost", "", "", "bank");
+     $link = mysqli_connect("localhost", "id16401102_webd", "30I9ZvCm8TO_/~6I", "id16401102_bank");
     // Check connection
     if($link === false){
        die("ERROR: Could not connect. " . mysqli_connect_error());
@@ -20,7 +20,13 @@
     date_default_timezone_set('Asia/Kolkata');
     $date = date('m/d/Y h:i:s a', time());
     
-       
+    $cust="SELECT * from customer where cust_name='$sendername'";
+    $cust=mysqli_query($link, $cust);
+    $res=mysqli_fetch_assoc($cust);
+    $checkn=$res['cust_name'];
+    $checke=$res['cust_email'];
+    if($checkn !=null and $checke==$email)
+    {
           $sql="SELECT * from customer where cust_name='$sendername'";
           $result=mysqli_query($link, $sql);
           $bal=$result->fetch_row()[3];
@@ -33,6 +39,7 @@
             mysqli_close($link);
             
           }
+          
           if($total >= 0)
           {
             $sql="UPDATE customer SET curr_bal='$total' where cust_name='$sendername'";
@@ -58,4 +65,10 @@
             $sql = "INSERT INTO transfers (ID, sender, receiver, amount, dates, email) VALUES ('$id', '$sendername', '$receivername', '$amount','$date','$email')";
             mysqli_query($link, $sql);
           }
+    }
+    
+    else
+    {
+        echo 'Wrong credentials! Please recheck your details.';
+    }
 ?>
