@@ -25,7 +25,8 @@
     $res=mysqli_fetch_assoc($cust);
     $checkn=$res['cust_name'];
     $checke=$res['cust_email'];
-    if($checkn !=null and $checke==$email)
+    
+    if($checkn !=null and $checke==$email and $amount>0)
     {
           $sql="SELECT * from customer where cust_name='$sendername'";
           $result=mysqli_query($link, $sql);
@@ -69,6 +70,9 @@
     
     else
     {
-        echo 'Wrong credentials! Please recheck your details.';
+        if($amount<0)
+            {echo 'Please enter valid amount!';}
+            else
+            { echo 'Invalid email or Sender name! Please recheck your details!';}
     }
 ?>
