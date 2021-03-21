@@ -74,7 +74,7 @@ if($link === false){
                  ?>
                     <a class="btn btn-xl btn-outline-light" href=<?php echo $url;?>>
                         <i class="fas fa-download mr-2"></i>
-                        Transfer Funds
+                        Transfer Funds to this account
                     </a>
                 </div>
         </header>
