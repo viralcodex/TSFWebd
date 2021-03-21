@@ -11,7 +11,9 @@ Project Details:
   
 Database Details:
   > Name: Bank
+  
   > Tables:customer, transfers
+  
   > Files included in repo: cutomer.sql, transfers.sql
  
 File Details:
